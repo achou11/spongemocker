@@ -1,0 +1,69 @@
+* {
+  font-family: serif;
+}
+
+html {
+  max-width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+div {
+  margin-top: 1rem;
+}
+
+label {
+  font-weight: 550;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+input[type="submit"] {
+  width: fit-content;
+  margin-top: 1rem;
+  align-self: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between
+}
+
+footer>* {
+  font-size: 1rem;
+}
+
+#output {
+  min-height: 50px;
+}
+
+.custom-button {
+  font-size: 16px;
+  border: 3px double grey;
+}
