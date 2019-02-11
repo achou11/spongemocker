@@ -4,21 +4,21 @@ const form = document.querySelector('form')
 const input = document.getElementById('user-input')
 const output = document.getElementById('output')
 
-const regex = /^[a-z]+$/i
-
 const SITE_NAME = 'Spongemock Me'
 const STOP_MOCKING_HEADER_TEXT = 'Please stop mocking the header'
 const START_MOCKING_HEADER_TEXT = 'Please mock the header'
+
+const regex = /^[a-z]+$/i
 
 const state = {
   shouldMockTitle: false,
   intervalID: null
 }
 
-function createMockText (value) {
-  if (value.length === 0) return ''
+function createMockText (text) {
+  if (text.length === 0) return ''
 
-  const result = value.split('').map(character => {
+  const result = text.split('').map(character => {
     if (regex.test(character)) {
       const boundary = Math.random()
       const determinant = Math.random()
