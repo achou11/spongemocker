@@ -1,3 +1,5 @@
+![Dat](https://dat-badge.glitch.me/ff3857aa7b2dc1ecc30a6a7e132ed138d06fbe631c72fdb2e0913bd15f238d80/badge.svg)
+
 # Spongemock Me
 
 **Context:**
