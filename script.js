@@ -60,9 +60,7 @@ function handleStartStopMockingHeader (state) {
 
 function handleTextSubmit (event) {
   event.preventDefault()
-
-  const result = createMockText(input.value)
-  output.textContent = result
+  output.textContent = createMockText(input.value)
 }
 
 function createSourceLink () {
