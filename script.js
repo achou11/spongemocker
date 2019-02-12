@@ -4,7 +4,7 @@ const form = document.querySelector('form')
 const input = document.getElementById('user-input')
 const output = document.getElementById('output')
 
-const SITE_NAME = 'Spongemock Me'
+const SITE_NAME = 'Spongemocker'
 const STOP_MOCKING_HEADER_TEXT = 'Please stop mocking the header'
 const START_MOCKING_HEADER_TEXT = 'Please mock the header'
 
@@ -68,7 +68,7 @@ function createSourceLink () {
   const isDat = window.DatArchive && window.location.origin.startsWith('dat:')
   const url = isDat
     ? `beaker://library/${window.location}`
-    : 'https://github.com/achou11/spongemock-me'
+    : 'https://github.com/achou11/spongemocker'
 
   sourceUrl.href = url
 }
