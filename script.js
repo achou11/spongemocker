@@ -11,8 +11,8 @@ const START_MOCKING_HEADER_TEXT = 'Please mock the header'
 const regex = /^[a-z]+$/i
 
 const state = {
-  shouldMockTitle: false,
-  intervalID: null
+  isMockingTitle: false,
+  intervalId: null
 }
 
 function createMockText (text) {
@@ -39,7 +39,7 @@ function createMockText (text) {
 }
 
 function startMockingHeader (state) {
-  state.intervalID = setInterval(function () {
+  state.intervalId = setInterval(function () {
     header.textContent = createMockText(header.textContent)
   }, 1000)
 
@@ -47,18 +47,18 @@ function startMockingHeader (state) {
 }
 
 function stopMockingHeader (state) {
-  clearInterval(state.intervalID)
+  clearInterval(state.intervalId)
   header.textContent = SITE_NAME
   mockHeaderButton.textContent = START_MOCKING_HEADER_TEXT
 }
 
 function handleStartStopMockingHeader (state) {
-  if (state.shouldMockTitle) {
+  if (state.isMockingTitle) {
     stopMockingHeader(state)
   } else {
     startMockingHeader(state)
   }
-  state.shouldMockTitle = !state.shouldMockTitle
+  state.isMockingTitle = !state.isMockingTitle
 }
 
 function handleTextSubmit (event) {
