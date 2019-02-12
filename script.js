@@ -18,19 +18,22 @@ const state = {
 function createMockText (text) {
   if (text.length === 0) return ''
 
-  const result = text.split('').map(character => {
-    if (regex.test(character)) {
-      const boundary = Math.random()
-      const determinant = Math.random()
+  const result = text
+    .split('')
+    .map(character => {
+      if (regex.test(character)) {
+        const boundary = Math.random()
+        const determinant = Math.random()
 
-      if (boundary < determinant) {
-        return character.toLowerCase()
+        if (boundary < determinant) {
+          return character.toLowerCase()
+        }
+        return character.toUpperCase()
       }
-      return character.toUpperCase()
-    }
 
-    return character
-  }).join('')
+      return character
+    })
+    .join('')
 
   return result
 }
@@ -74,5 +77,7 @@ function createSourceLink () {
 }
 
 document.addEventListener('DOMContentLoaded', createSourceLink)
-mockHeaderButton.addEventListener('click', () => handleStartStopMockingHeader(state))
+mockHeaderButton.addEventListener('click', () =>
+  handleStartStopMockingHeader(state)
+)
 form.addEventListener('submit', handleTextSubmit)
