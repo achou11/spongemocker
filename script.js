@@ -1,5 +1,5 @@
 const header = document.querySelector('h1')
-const mockHeaderButton = document.getElementById('mock-header')
+const mockHeaderButton = document.getElementById('mock-header-button')
 const form = document.querySelector('form')
 const input = document.getElementById('user-input')
 const output = document.getElementById('output')
