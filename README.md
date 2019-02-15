@@ -4,7 +4,7 @@
 
 ## Context
 
-This site is based on the rather popular [Mocking Spongebob meme](https://knowyourmeme.com/memes/mocking-spongebob). I suggest you familiarize yourself with it because it's hilarious and incredibly applicable in all kinds of situations.
+This site is based on the rather popular [Mocking SpongeBob meme](https://knowyourmeme.com/memes/mocking-spongebob). I suggest you familiarize yourself with it because it's hilarious and incredibly applicable in all kinds of situations.
 
 ## Why
 

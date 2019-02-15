@@ -1,5 +1,15 @@
+:root {
+  /* Colors come from http://color.wikia.com/wiki/SpongeBob */
+  --spongebob-yellow: #FFF359;
+  --spongebob-green: #9E9D05;
+  --spongebob-brown: #5F2227;
+  --spongebob-blue: #32BBF1;
+}
+
 * {
   font-family: sans-serif;
+  color: var(--spongebob-brown);
+
 }
 
 html {
@@ -13,10 +23,25 @@ html {
 body {
   font-size: 1.5rem;
   width: 80%;
+  background-color: var(--spongebob-yellow);
 }
 
 div {
   margin-top: 1rem;
+}
+
+input[type="text"],
+a,
+.custom-button {
+  outline-color: var(--spongebob-blue);
+}
+
+a {
+  color: var(--spongebob-brown);
+}
+
+a:visited {
+  color: var(--spongebob-blue);
 }
 
 label {
@@ -25,6 +50,7 @@ label {
 
 hr {
   margin: 2rem 0;
+  border: 1px solid var(--spongebob-green)
 }
 
 form {
@@ -35,6 +61,7 @@ form {
 input[type="text"] {
   margin-top: 1rem;
   font-size: 1.5rem;
+  border-color: var(--spongebob-green);
 }
 
 input[type="submit"] {
@@ -65,5 +92,16 @@ footer>* {
 
 .custom-button {
   font-size: 16px;
-  border: 3px double grey;
+  border: 5px groove var(--spongebob-green);
+  background-color: inherit;
+}
+
+.custom-button:active {
+  border-width: 2px;
+  border-style: groove;
+}
+
+footer>span:last-child {
+  display: flex;
+  flex-direction: column;
 }
